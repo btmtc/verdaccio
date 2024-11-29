@@ -7,7 +7,7 @@ services:
     environment:
       - VERDACCIO_PORT=4873
     ports:
-      - $VERDACCIO_PORT:$VERDACCIO_PORT
+      - 4873:4873
     volumes:
       - ./storage:/verdaccio/storage
       - ./config:/verdaccio/conf
